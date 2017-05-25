@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  </head>
+  <body>
+<div class=row>
+  <div class="col-xs-6 col-md-3 sidebar-offcanvas" id="sidebar" role="navigation"   style="float:right">
+
+      <ul class="nav">
+          <% piosenki.piosenki.forEach(function (item){  %>
+
+          <li><a href="#" class="costam" onClick="divFunction('<%=item.tekst%>','<%=item.akordy%>','<%=item.tytul%>')" ><%= item.tytul %></a></li>
+          <% }); %>
+
+      </ul>
+        <br/>
+    </div>
+    <div id="nazwapiosenki"><h4><br/><br/>Zespół weselny Juhasy<br/><br/></h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hideth 2016 ©</p></div>
+</div>
+    <div class="row">
+      <div class="col-lg-6 col-sm-7" id="tekst-piosenki"></div>
+      <div class="col-xs-3 col-sm-2-offset-4" id="akordy"></div>
+      </div>
+    </div>
+
+
+
+<script>
+
+  function divFunction(tekst,akordy,tytul){
+
+    document.getElementById('tekst-piosenki').innerHTML='<h2>'+tekst+'</h2>';
+    document.getElementById('akordy').innerHTML='<h3>'+akordy+'</h3>';
+    document.getElementById('nazwapiosenki').innerHTML='<h4><u>'+tytul+'</u></h4>';
+  }
+</script>
+
+
+  </body>
+</html>

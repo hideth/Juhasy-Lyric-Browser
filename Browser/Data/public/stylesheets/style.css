@@ -1,0 +1,46 @@
+body {
+  background-image: url("../images/tlo.png");
+  background-color: #f6f6f6;
+  padding: 15px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+@font-face {
+  font-family: czcionka;
+  src:url(../fonts/KGChelseaMarketScript.ttf);
+}
+a {
+  color: #00B7FF;
+}
+.nav{
+
+  position: absolute;
+  top:0px;
+  right:5px;
+  background-color: #f6f6f6;
+  max-height: 690px;
+  width: 250px;
+  overflow-y:auto;
+}
+h3{
+  color: red;
+}
+nazwapiosenki{
+  position: absolute;
+  left: 2000px;
+
+}
+h4{
+ font-size: 40px;
+}
+h2{
+  font-family: "Arial",sans-serif;
+
+  font-size: 24px;
+}
+a{
+  color: red;
+}
+tabb{
+  tab-size:20px;
+}
